@@ -2,8 +2,8 @@
 import turtle
 turtle.shape('turtle')
 
-n=36
-l=10
+n=36   # количество секторов на длину окружности
+l=10   # длина стороны сектора
 turtle.penup()
 turtle.forward(l)
 turtle.pendown()
