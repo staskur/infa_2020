@@ -30,12 +30,14 @@ def test_sort(sort_algoritm):
     print("testcase #1: ", end="")
     A=[4,2,5,1,3]
     A_sorted= [1,2,3,4,5]
+#    B=A[:]
     sort_algoritm(A)
     print("Ok" if A == A_sorted else "Fail")
 
     print("testcase #2: ", end="")
     A = list(range(10,20))+list(range(0,10))
     A_sorted = list(range(20))
+#    B=A[:]
     sort_algoritm(A)
     print("Ok" if A == A_sorted else "Fail")
 

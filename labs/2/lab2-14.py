@@ -14,3 +14,4 @@ for i in range(n):
     turtle.left(angle)
 
 turtle.exitonclick()
+
