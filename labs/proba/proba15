@@ -1,20 +1,6 @@
-
-#name=input('Имя ? ')
-#print("ваше имя",name, "!")
-
+# http://cs.mipt.ru/python/lessons/lab1.html
+# upr 1
 import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.arange(-10, 10.01, 0.01)
-plt.plot(x, np.cos(x), x, np.sin(x), x, -x)
-plt.figure(figsize=(10, 5))
-plt.plot(x, np.sin(x), label=r'$f_1(x)=\sin(x)$')
-plt.plot(x, np.cos(x), label=r'$f_2(x)=\cos(x)$')
-plt.plot(x, -x, label=r'$f_3(x)=-x$')
-plt.xlabel(r'$x$', fontsize=14)
-plt.ylabel(r'$f(x)$', fontsize=14)
-plt.grid(True)
-plt.legend(loc='best', fontsize=12)
-plt.savefig('figure_with_legend.png')
-plt.show()
-
+for x in 1,10,1000:
+    y = np.log(np.e**(1/(np.sin(x)+1))/(5/4+1/(x**1*5)))/np.log(1+x**2)
+    print(x,y)
