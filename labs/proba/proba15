@@ -1,6 +1,17 @@
 # http://cs.mipt.ru/python/lessons/lab1.html
 # upr 1
-import numpy as np
-for x in 1,10,1000:
-    y = np.log(np.e**(1/(np.sin(x)+1))/(5/4+1/(x**1*5)))/np.log(1+x**2)
-    print(x,y)
+#import numpy as np
+#for x in 1,10,1000:
+#    y = np.log(np.e**(1/(np.sin(x)+1))/(5/4+1/(x**1*5)))/np.log(1+x**2)
+#    print(x,y)
+
+x = 100
+y = 100
+shirina = 200
+visota = 300
+
+def domik(x,y,shirina,visota):
+    print('домик - ',x,y,shirina,visota)
+
+
+domik()
