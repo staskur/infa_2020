@@ -5,10 +5,13 @@ window.title(u"домик")
 turtle.shape('arrow')
 turtle.hideturtle()
 
+shirina = int(turtle.textinput(u"размеры домика", "Введите ширину: "))
+visota = int(turtle.textinput(u"размеры домика", "Введите высоту: "))
+
 x = 0
 y = -150
-shirina = 300
-visota = 200
+#shirina = 300
+#visota = 200
 
 turtle.screensize(shirina+100, visota+100)
 
