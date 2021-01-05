@@ -10,28 +10,25 @@ visota = int(turtle.textinput(u"размеры домика", "Введите в
 
 x = 0
 y = -150
-#shirina = 300
-#visota = 200
 
 turtle.screensize(shirina+100, visota+100)
 
 # рисуем основание foundation 10% общей высоты
 turtle.penup()
-turtle.setposition(x,y)
+turtle.setposition(x, y)
 turtle.pencolor("brown")
 turtle.pendown()
-turtle.setposition(shirina/2+x,0+y)
-turtle.setposition(shirina/2+x,visota/10+y)
-turtle.setposition(-shirina/2+x,visota/10+y)
-turtle.setposition(-shirina/2+x,0+y)
-turtle.setposition(x,y)
+turtle.setposition(shirina/2+x, 0+y)
+turtle.setposition(shirina/2+x, visota/10+y)
+turtle.setposition(-shirina/2+x, visota/10+y)
+turtle.setposition(-shirina/2+x, 0+y)
+turtle.setposition(x, y)
 turtle.penup()
-
 
 # рисуем стены   wall
 # правая
 
-turtle.setposition(x+shirina/2-shirina/10,visota/10+y)
+turtle.setposition(x+shirina/2-shirina/10, visota/10+y)
 turtle.pencolor("blue")
 turtle.pendown()
 turtle.sety(visota-visota/10-visota/20+y)
@@ -47,16 +44,13 @@ turtle.setx(x-(shirina/2-shirina/10+shirina/20))
 turtle.sety(visota/10+y)
 turtle.penup()
 
-
 # рисуем крышу   roof
-turtle.setposition(x,y+visota)
+turtle.setposition(x, y+visota)
 turtle.pencolor("red")
 turtle.pendown()
-turtle.setposition(x+shirina/2,y+visota-visota/10-visota/20)
+turtle.setposition(x+shirina/2, y+visota-visota/10-visota/20)
 turtle.setx(x-shirina/2)
-turtle.setposition(x,y+visota)
+turtle.setposition(x, y+visota)
 turtle.penup()
 
-
 turtle.exitonclick()
-
